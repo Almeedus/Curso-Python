@@ -3,7 +3,7 @@ from dados import produtos
 
 novos_produtos = copy.deepcopy(produtos)
 
-produtos_ordenados_por_nome = [
+novos_produtos = [
     {**p, 'preco': round(p['preco'] * 1.1, 2)} 
     for p in copy.deepcopy(produtos)
 ]
