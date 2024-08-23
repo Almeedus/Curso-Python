@@ -67,3 +67,4 @@
 [23-8-2024 19:30:13]  Dados do sensor: 949.
 [23-8-2024 19:30:13]  Dados do sensor: 78.
 [23-8-2024 19:30:13]  Dados do sensor: 820.
+[23-8-2024 19:30:13]  Dados do sensor: 435.
