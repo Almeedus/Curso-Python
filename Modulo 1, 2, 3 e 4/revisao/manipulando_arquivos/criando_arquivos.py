@@ -2,7 +2,7 @@
 
 # O caminho refere ao caminho que estou quando não especifico onde ele deve ser aberto
 # pelo fato do python ter dificuldade em entender a barra invertida no caminho, utilizamos duas barras ao inves de uma
-caminho_completo = 'C:\\Users\\eduar\\OneDrive\\Documentos\\Curso-Python\\Modulo 1, 2, 3 e 4\\curso_geral\\revisao\\criando_arquivo\\'
+caminho_completo = 'C:\\Users\\eduar\\OneDrive\\Documentos\\Curso-Python\\Modulo 1, 2, 3 e 4\\revisao\\manipulando_arquivos\\'
 caminho_arquivo = 'arquivo.txt'
 
 # Concatenando o arquivo para que ele fique com o caminho completo e com o arquivo, dessa forma podendo ser achado dentro do
