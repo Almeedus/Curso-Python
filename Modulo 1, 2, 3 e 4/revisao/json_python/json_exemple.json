@@ -1,0 +1,23 @@
+{
+  "name": "Eduardo",
+  "middle_name": "Almeida",
+  "address": [
+    {
+      "street": "Avenida Nestor Fogaça",
+      "number": 1017
+    },
+    {
+      "street": "Rua Franscisco Rosa",
+      "number": 71
+    }
+  ],
+  "height": 1.83,
+  "preferred_numbers": [
+    7,
+    14,
+    9,
+    20
+  ],
+  "dev": true,
+  "nothing": null
+}
