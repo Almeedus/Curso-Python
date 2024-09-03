@@ -28,8 +28,6 @@ while True:
         continue
     
     if user_choose == 0:
-        # adicionar = [] -> lista de tarefas
-        # adicionar = ['fazer café'] -> Adicionar fazer café
         system("clear")
         task_user = str(input("Task name: "))
         add_task(task=task_user, todo_list=list_task)
@@ -48,7 +46,6 @@ while True:
         input("enter redo task")
     
     elif user_choose == 3:
-        # visualizar todo lista
         system("clear")
         print("TO DO LIST")
         for _index, task in enumerate(list_task):
