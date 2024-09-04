@@ -11,17 +11,18 @@ def add_task(task=str, todo_list=None):
     todo_list.append(task)
     return todo_list
 
-def undo_task(todo_list=None, backup_list=None):
-    if todo_list == None:
-        create_list(todo_list)
-    if backup_list == None: 
-        create_list(backup_list)
+def remove_last_task(list_remove=None, list_add=None):
+    if list_remove == None:
+        create_list(list_remove)
+    if list_add == None: 
+        create_list(list_add)
     
     try:
-        task = todo_list[-1]
-        backup_list.append(task)
-        todo_list.remove(task)
-        return print(f'{str(task).upper()} successfully removed.')
+        task = list_remove[-1]
+        list_add.append(task)
+        list_remove.remove(task)
+        return print(f'{str(task).upper()} successfully redone.\n')
+        
     except IndexError:
         print(_red[0],"The list is already empty.",_red[1])
         input("Type enter to reload.")
@@ -59,15 +60,11 @@ while True:
         
     elif user_choose == 1:
         system("clear")
-        undo_task(todo_list=list_task, backup_list= backup_task_list)
-        print(list_task)
-        print(backup_task_list)
+        remove_last_task(list_remove=list_task, list_add= backup_task_list)
         
     elif user_choose == 2:
-        # refazer = todo ['fazer café']
-        # refazer = todo ['fazer café', 'caminhar']
         system("clear")
-        input("enter redo task")
+        remove_last_task(list_remove=backup_task_list, list_add= list_task)
     
     elif user_choose == 3:
         system("clear")
