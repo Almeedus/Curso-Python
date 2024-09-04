@@ -1,8 +1,13 @@
 from os import system
 
+def create_list(list_todo=None):
+    if list_todo == None:
+        list_todo = []
+    return list_todo
+
 def add_task(task=str, todo_list=None):
     if todo_list is None:
-        todo_list = []
+        create_list(todo_list)
     todo_list.append(task)
     return todo_list
 
