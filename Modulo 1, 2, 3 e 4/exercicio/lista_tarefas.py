@@ -11,7 +11,26 @@ def add_task(task=str, todo_list=None):
     todo_list.append(task)
     return todo_list
 
+def undo_task(todo_list=None, backup_list=None):
+    if todo_list == None:
+        create_list(todo_list)
+    if backup_list == None: 
+        create_list(backup_list)
+    
+    try:
+        task = todo_list[-1]
+        backup_list.append(task)
+        todo_list.remove(task)
+        return print(f'{str(task).upper()} successfully removed.')
+    except IndexError:
+        print(_red[0],"The list is already empty.",_red[1])
+        input("Type enter to reload.")
+        system("clear")
+        
+    
+_red = ["\033[31m","\033[m"]
 list_task = []
+backup_task_list = []
 while True:
     option_list = ["Add task", "Undo task", "Redo task", "Visualize List"]
     
@@ -26,7 +45,7 @@ while True:
         user_choose = int(user_choose)-1
         
     except ValueError:
-        _red = ["\033[31m","\033[m"]
+        
         print(_red[0],"Wrong value! Type only numbers.",_red[1])
         input("Type enter to reload.")
         system("clear")
@@ -39,10 +58,10 @@ while True:
         print("")
         
     elif user_choose == 1:
-        # desfazer = ['fazer café'] -> Refazer ['caminhar']
-        # desfazer = [] -> Refazer ['caminhar', 'fazer café']
         system("clear")
-        input("enter under task")
+        undo_task(todo_list=list_task, backup_list= backup_task_list)
+        print(list_task)
+        print(backup_task_list)
         
     elif user_choose == 2:
         # refazer = todo ['fazer café']
