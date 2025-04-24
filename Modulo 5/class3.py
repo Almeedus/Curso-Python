@@ -1,4 +1,5 @@
 # Atributo de classe
+# __dict__ e vars para atributos de instancia
 
 class Pessoa: 
     ano_atual = 2025
@@ -12,3 +13,7 @@ class Pessoa:
     
 p1 = Pessoa("Lucas", 23)
 print(p1.get_ano_nascimento())
+
+#Onde é salvo todos os dados da instancia
+print(p1.__dict__)
+print(vars(p1))
