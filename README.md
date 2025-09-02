@@ -18,6 +18,8 @@ Exercicios realizados em aula, desafios e lógicas. Este módulo proporciona uma
 
 ### 4. Python intermediário - Funções, Dicionários, Módulos, Programação Funcional e +;
 
+Definições de scopos de funções e módulos, tipos de retornos, \*args, shallow e deep copy, set e dict, funções lambdas, tratamento de exceções , decorators, recursividade, etc. Além de exercícios de fixação.
+
 ### Árvore de diretório:
 
 ```
