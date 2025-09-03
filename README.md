@@ -20,6 +20,10 @@ Exercicios realizados em aula, desafios e lógicas. Este módulo proporciona uma
 
 Definições de scopos de funções e módulos, tipos de retornos, \*args, shallow e deep copy, set e dict, funções lambdas, tratamento de exceções , decorators, recursividade, etc. Além de exercícios de fixação.
 
+### 5. Introdução à Programação Orientada a Objetos em Python -POO (Classes)
+
+Definição e criação de classes, métodos de classe, associações de classes, agregações de classes, composições de classes, Herança, Polimorfismo, Exceções orientadas a objetos, Dunder Methods, etc.
+
 ### Árvore de diretório:
 
 ```
