@@ -24,3 +24,15 @@ class Aluno(Pessoa):
     
 aluno1 = Aluno('Eduardo','Almeida','3ano b')
 print(aluno1.falar_nome())
+
+
+
+# Herança Multipla 
+# As classes podem herdar de mais de uma classe
+
+# Mixing
+# Misturando classes de 'famílias diferentes' (colocar uma classe que não tem nada haver)
+
+# MRO - Método de Resolução de Métodos (Method Resolution Order)
+# O método mro() ou o atributo __mro__, fornece a ordem de procedencia dos métodos
+
