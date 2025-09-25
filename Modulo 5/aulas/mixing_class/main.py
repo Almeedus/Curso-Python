@@ -1,9 +1,7 @@
-from log import LogFileMixin, LogPrintMixin
+from eletronico import Celular
 
-lp = LogPrintMixin()
-lp.log_error('Passou no erro')
-lp.log_success('Passou no sucesso')
+s25 = Celular('Samsung S25')
+iPhone = Celular('Iphone 11')
 
-lf = LogFileMixin()
-lf.log_error('Error no arquivo')
-lf.log_success('Sucesso no arquivo')
+s25.ligar()
+iPhone.desligar()
