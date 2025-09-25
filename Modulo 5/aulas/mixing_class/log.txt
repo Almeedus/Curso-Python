@@ -1,0 +1,13 @@
+# caso com o modo 'w' de write
+
+Success: Sucesso no arquivo: (LogFileMixin)
+
+# caso com o modo 'a' append
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
