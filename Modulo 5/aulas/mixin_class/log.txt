@@ -1,0 +1,22 @@
+# caso com o modo 'w' de write
+
+Success: Sucesso no arquivo: (LogFileMixin)
+
+# caso com o modo 'a' append
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Error: Error no arquivo: (LogFileMixin)
+Success: Sucesso no arquivo: (LogFileMixin)
+Success: Samsung S25está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Success: Samsung S25 está ligado: (Celular)
+Error: Iphone 11 está desligado: (Celular)
