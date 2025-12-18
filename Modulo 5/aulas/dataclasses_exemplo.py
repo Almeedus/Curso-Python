@@ -2,23 +2,26 @@
 # módulo que fornece um decorador e funções para criar métodos como: 
 # __init__(), __repr() e __eq__() 
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 @dataclass
 class Pessoa:
     nome: str | None = None
     sobrenome: str | None = None
     idade: int | None = None
+    nome_completo = str = field(init=False)
 
-    @property
-    def nome_completo(self) -> str:
-        return f'{self.nome} {self.sobrenome}'
+    def __post_init__(self):
+        self.nome_completo = f'{self.nome}{self.sobrenome}'
+    # @property
+    # def nome_completo(self) -> str:
+    #     return f'{self.nome} {self.sobrenome}'
     
-    @nome_completo.setter
-    def nome_completo(self, nome: str) -> None:
-        nome, *sobrenome = nome.split()
-        self.nome = nome
-        self.sobrenome = ' '.join(sobrenome)
+    # @nome_completo.setter
+    # def nome_completo(self, nome: str) -> None:
+    #     nome, *sobrenome = nome.split()
+    #     self.nome = nome
+    #     self.sobrenome = ' '.join(sobrenome)
 
 if __name__ == '__main__':
     p1 = Pessoa()
