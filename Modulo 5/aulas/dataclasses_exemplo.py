@@ -4,18 +4,19 @@
 
 from dataclasses import dataclass, field
 
-@dataclass
+@dataclass(frozen=True)
 class Pessoa:
     nome: str | None = None
     sobrenome: str | None = None
     idade: int | None = None
-    nome_completo = str = field(init=False)
+    # nome_completo: str = field(init=False)
 
-    def __post_init__(self):
-        self.nome_completo = f'{self.nome}{self.sobrenome}'
-    # @property
-    # def nome_completo(self) -> str:
-    #     return f'{self.nome} {self.sobrenome}'
+    # def __post_init__(self):
+    #     self.nome_completo = f'{self.nome} {self.sobrenome}'
+        
+    @property
+    def nome_completo(self) -> str:
+        return f'{self.nome} {self.sobrenome}'
     
     # @nome_completo.setter
     # def nome_completo(self, nome: str) -> None:
@@ -24,6 +25,5 @@ class Pessoa:
     #     self.sobrenome = ' '.join(sobrenome)
 
 if __name__ == '__main__':
-    p1 = Pessoa()
-    p1.nome_completo = 'Lala lele lili lolo'
+    p1 = Pessoa('Eduardo', 'Almeida', 23)
     print(p1.nome_completo)
