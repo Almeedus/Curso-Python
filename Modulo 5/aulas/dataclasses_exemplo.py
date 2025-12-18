@@ -4,7 +4,7 @@
 
 from dataclasses import dataclass, field
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, repr=False)
 class Pessoa:
     nome: str | None = None
     sobrenome: str | None = None
@@ -27,3 +27,4 @@ class Pessoa:
 if __name__ == '__main__':
     p1 = Pessoa('Eduardo', 'Almeida', 23)
     print(p1.nome_completo)
+    print(p1)
